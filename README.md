@@ -1,6 +1,6 @@
 ## Advanced Restaurant
 
-Most advanced erpnext restaurant
+Most advanced erpnext restaurant app
 
 #### License
 

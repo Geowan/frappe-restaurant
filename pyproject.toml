@@ -1,9 +1,9 @@
 [project]
 name = "advanced_restaurant"
 authors = [
-    { name = "Soradius", email = "dev@soradius.com"}
+    { name = "Soradius solutions", email = "dev@soradius.com"}
 ]
-description = "Most advanced erpnext restaurant"
+description = "Most advanced erpnext restaurant app"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

@@ -1,7 +1,7 @@
 app_name = "advanced_restaurant"
 app_title = "Advanced Restaurant"
-app_publisher = "Soradius"
-app_description = "Most advanced erpnext restaurant"
+app_publisher = "Soradius solutions"
+app_description = "Most advanced erpnext restaurant app"
 app_email = "dev@soradius.com"
 app_license = "mit"
 # required_apps = []
