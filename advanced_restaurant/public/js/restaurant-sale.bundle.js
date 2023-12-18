@@ -1,0 +1,16 @@
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_pos_item_selector.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_pos_item_cart"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_pos_item_details.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_number_pad.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_pos_payment.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_past_order_list.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_past_order_summary.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_pos.js"
+
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_table_selection.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_location_selection.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_pos_shift_opening.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_shift_details.js"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_loading"
+import "../../../advanced_restaurant/advanced_restaurant/page/restaurant_sale/sale_controller"
+

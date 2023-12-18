@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YY}-{MM}-{DD}-{production_center}-{####}",
+ "creation": "2023-12-15 02:40:47.345698",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "production_center",
+  "column_break_hsll",
+  "table",
+  "column_break_szmd",
+  "warehouse",
+  "section_break_sjzg",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "production_center",
+   "fieldtype": "Link",
+   "label": "Production center",
+   "options": "Production Center"
+  },
+  {
+   "fieldname": "column_break_hsll",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Link",
+   "label": "Table",
+   "options": "Table"
+  },
+  {
+   "fieldname": "section_break_sjzg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "options": "Production Center Order Items"
+  },
+  {
+   "fieldname": "column_break_szmd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-17 15:34:29.911772",
+ "modified_by": "Administrator",
+ "module": "Advanced Restaurant",
+ "name": "Production Center Orders",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

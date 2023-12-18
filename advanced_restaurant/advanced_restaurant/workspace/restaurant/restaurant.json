@@ -1,0 +1,78 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"7fHr8wgKmP\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Advanced Restaurant</span>\",\"col\":12}},{\"id\":\"P7qr-rxtMr\",\"type\":\"card\",\"data\":{\"card_name\":\"Restaurant data\",\"col\":4}},{\"id\":\"nTJG7QTPNs\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2023-12-11 11:17:23.402549",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-monthly-rank",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Restaurant",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant data",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Tables",
+   "link_count": 0,
+   "link_to": "Table",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Production center",
+   "link_count": 0,
+   "link_to": "Production Center",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Waiter shifts",
+   "link_count": 0,
+   "link_to": "Waiter Shift",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 0,
+   "link_to": "Advance Restaurant Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-12-14 04:15:08.802598",
+ "modified_by": "Administrator",
+ "module": "Advanced Restaurant",
+ "name": "Restaurant",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [],
+ "title": "Restaurant"
+}

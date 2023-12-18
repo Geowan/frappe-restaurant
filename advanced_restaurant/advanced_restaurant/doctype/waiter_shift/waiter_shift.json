@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{YY}-{MM}-{DD}-Waiter_shift-{####}",
+ "creation": "2023-12-12 20:42:51.275117",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qkbx",
+  "user",
+  "column_break_evys",
+  "shift_start",
+  "shift_end",
+  "column_break_aykf",
+  "status",
+  "warehouse",
+  "section_break_gzaf",
+  "sales",
+  "section_break_oqqh",
+  "payments"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qkbx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Waiter",
+   "options": "User",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_evys",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shift_start",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shift start",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "shift_end",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shift end",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_aykf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gzaf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sales",
+   "fieldtype": "Table",
+   "label": "Shift Sales",
+   "options": "Waiter Shift Sales",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shift Status",
+   "options": "Open\nClosed",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_oqqh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "Paymwents",
+   "options": "Advanced Table Order Payment"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-16 16:58:22.861659",
+ "modified_by": "Administrator",
+ "module": "Advanced Restaurant",
+ "name": "Waiter Shift",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

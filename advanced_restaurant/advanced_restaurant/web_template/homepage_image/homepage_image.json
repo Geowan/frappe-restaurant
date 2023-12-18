@@ -1,0 +1,24 @@
+{
+ "__unsaved": 1,
+ "creation": "2023-12-13 19:51:59.794150",
+ "docstatus": 0,
+ "doctype": "Web Template",
+ "fields": [
+  {
+   "__unsaved": 1,
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image",
+   "reqd": 0
+  }
+ ],
+ "idx": 0,
+ "modified": "2023-12-13 19:53:10.639635",
+ "modified_by": "Administrator",
+ "module": "Advanced Restaurant",
+ "name": "Homepage image",
+ "owner": "Administrator",
+ "standard": 1,
+ "template": "",
+ "type": "Section"
+}

@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-12 17:02:00.416860",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gizt",
+  "authorization_app",
+  "column_break_ipuf",
+  "section_break_yeij",
+  "locations"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yeij",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "locations",
+   "fieldtype": "Table",
+   "label": "Available locations",
+   "options": "Advance Restaurant Locations"
+  },
+  {
+   "fieldname": "section_break_gizt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "authorization_app",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Authorization App",
+   "options": "OAuth Client",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ipuf",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-14 04:17:08.846674",
+ "modified_by": "Administrator",
+ "module": "Advanced Restaurant",
+ "name": "Advance Restaurant Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
