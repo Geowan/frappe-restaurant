@@ -100,7 +100,7 @@
  "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-16 16:58:22.861659",
+ "modified": "2023-12-30 15:40:41.353139",
  "modified_by": "Administrator",
  "module": "Advanced Restaurant",
  "name": "Waiter Shift",
@@ -115,7 +115,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "All",
    "share": 1,
    "write": 1
   }
