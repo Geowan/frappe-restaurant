@@ -37,12 +37,46 @@ def email_auth(**kwargs):
 
 @frappe.whitelist(allow_guest=True)
 def app_data():
+    items = []
+    
     products = frappe.get_all("Item", fields=["*"], filters=[])
+    for product in products:
+        product_item = frappe.get_doc("Item", product.name, as_dict=True)
+        if product_item.taxes:
+            tax_template = frappe.db.get_value("Item Tax Template Detail",
+                                               filters={"parent": product_item.taxes[0].item_tax_template},
+                                               fieldname="tax_rate")
+            product_item.actual_tax = tax_template
+        else:
+            product_item.actual_tax = 0
+        items.append(product_item)
     tables = frappe.get_all("Table", fields=["*"])
+    bin = frappe.get_all("Bin", fields=["*"])
+    warehouses = frappe.get_all("Warehouse", fields=["*"])
+    prices = frappe.get_all("Item Price", fields=["*"], filters={"price_list": "Standard Selling"})
+    customers = frappe.get_all("Customer", fields=["*"])
+    payment_modes = frappe.get_all("Mode of Payment", fields=["*"], filters={"enabled": 1})
+    item_groups = frappe.get_all("Item Group", fields=["*"], filters={"is_group": 0})
+    production_center = frappe.get_all("Production Center", fields=["*"])
+    pos_profile = frappe.get_all("POS Profile", fields=["*"])
+    tax_rates = []
+    for rate_item in frappe.get_all("Item Tax Template", fields=["*"]):
+        elem = frappe.db.get_value("Item Tax Template Detail", filters={"parent": rate_item.name}, fieldname="tax_rate")
+        tax_rates.append(elem)
 
     return {
-        "products": products,
-        "tables": tables
+        "rates": tax_rates,
+        "warehouses": warehouses,
+        "bin": bin,
+        "items": items,
+        "prices": prices,
+        "customers": customers,
+        "payment_modes": payment_modes,
+        "item_groups": item_groups,
+        "tables": tables,
+        "production_center": production_center,
+        "pos_profile": pos_profile,
+
     }
 
 
@@ -129,8 +163,8 @@ def submit_order(**kwargs):
     cartDoc.table = cart["table"]
     cartDoc.customer = cart["customer"]
     cartDoc.order_type = cart["order_type"]
-    cartDoc.status ="submitted"
-    cartDoc.waiter =cart["waiter"]
+    cartDoc.status = "submitted"
+    cartDoc.waiter = cart["waiter"]
     for item in cart["items"]:
         childDoc = frappe.new_doc("Advanced Table Order Items")
         childDoc.item = item["item_code"]
@@ -140,3 +174,29 @@ def submit_order(**kwargs):
     cartDoc.save(ignore_permissions=True)
 
     return True
+
+
+@frappe.whitelist(allow_guest=True)
+def get_init_data():
+    customers = frappe.get_all("Customers")
+    bin = frappe.get_all("Bin")
+
+    return {
+        "customers": customers,
+        "bin": bin
+    }
+
+
+@frappe.whitelist(allow_guest=True)
+def get_waiters():
+    waiters = frappe.get_all("User")
+    return {"waiters": waiters}
+
+@frappe.whitelist()
+def get_orders():
+    items = []
+    orders = frappe.get_all("Advanced Table Order", fields=["*"])
+    for order in orders:
+        item = frappe.get_doc("Advanced Table Order", order.name)
+        items.append(item)
+    return items

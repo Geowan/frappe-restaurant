@@ -6,6 +6,8 @@
  "engine": "InnoDB",
  "field_order": [
   "center_name",
+  "column_break_pphj",
+  "for_drinks",
   "section_break_riuq",
   "item_groups"
  ],
@@ -25,12 +27,21 @@
    "fieldtype": "Table",
    "label": "Item groups",
    "options": "Production Center Item Groups"
+  },
+  {
+   "fieldname": "column_break_pphj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_drinks",
+   "fieldtype": "Check",
+   "label": "For drinks only"
   }
  ],
- "in_create": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-14 03:37:16.277828",
+ "modified": "2023-12-30 16:14:03.659375",
  "modified_by": "Administrator",
  "module": "Advanced Restaurant",
  "name": "Production Center",
