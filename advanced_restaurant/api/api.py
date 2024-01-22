@@ -38,6 +38,7 @@ def email_auth(**kwargs):
 @frappe.whitelist(allow_guest=True)
 def app_data():
     items = []
+    
     products = frappe.get_all("Item", fields=["*"], filters=[])
     for product in products:
         product_item = frappe.get_doc("Item", product.name, as_dict=True)
